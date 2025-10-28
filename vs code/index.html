@@ -1,0 +1,80 @@
+<!-- atribuindo cabeçario a página-->
+<head>
+    <h2> Calculadora </h2>
+    <meta charset="UTF-8">
+</head>
+
+
+<!-- o H é o tamanho da fonte para o título-->
+   
+<h2> calculadora</h2>
+<p>informe o numero 1 </p>
+<input id = "num1" type= "number">
+<p>informe o numero 2 </p>
+<input id = "num2" type= "number">
+<br><br>
+<button type= "button" onclick ="calcular('Somar')">somar</button>
+<button type= "button" onclick ="calcular('Subtrair')">subtrair</button>
+<button type= "button" onclick ="calcular('Multiplicar')">multiplicar</button>
+<button type= "button" onclick ="calcular('DIVIDIR')">dividir</button>
+
+
+
+<h4>nome:</h4>
+<div> id= "nome" ></div>
+<h4>resultado:</h4>
+<button type="button" onclick="pokemonImgNome('pokemonImgNome')">Inserir</button>
+<div id=resultado></div>
+
+
+
+<hr>
+<script>
+    
+
+
+  function pokemonImgNome(){
+  fetch('https://pokeapi.co/api/v2/pokemon/2')
+    .then(res => res.json())
+    .then(data => {
+        console.log(data)
+        document.getElementById('resultado').innerHTML = '<img src="'+data.sprites.front_default+'" width="300">';
+        document.getElementById('Nome').innerHTML = '<h4>'+data.sprites.name+ '</h4'
+    
+    
+    })
+}
+
+    
+
+
+
+    function calcular(operacao){
+        var numero1 = parseFloat(document.getElementById('num1').value);
+        var numero2 = parseFloat(document.getElementById('num2').value);
+            switch(operacao){
+                case 'Somar' :
+                resultado = numero1 + numero2
+                break
+
+
+                case 'Subtrair' :
+                resultado = numero1 - numero2
+                break
+
+
+                case 'Multiplicar' :
+                resultado = numero1 * numero2
+                break
+
+
+                case 'DIVIDIR' :
+                if (numero2==0) {
+                    resultado='não é possivel dividir por zero!'
+                }else{
+                    resultado = numero1 / numero2
+                }
+            }
+    document.getElementById('resultado').innerHTML = resultado
+    }
+</script>
