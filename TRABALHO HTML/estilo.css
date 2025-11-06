@@ -1,0 +1,15 @@
+body{
+ 
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: rgb(230, 230, 230);
+}
+header, footer{
+    background-color: rgb(35, 0, 231);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: lem 0;
+}
+h1{
+    color: rgb(253, 253, 253);
+}
