@@ -1,0 +1,23 @@
+
+
+  span.a {
+    display: inline; /* the default for span */
+    padding: 5px;
+    border: 2px solid rgb(4, 0, 245);  
+  }
+  
+  span.b {
+    display: inline-block;
+    width: 100px;
+    height: 35px;
+    padding: 5px;
+    border: 2px solid rgb(0, 231, 69);    
+  }
+  
+  span.c {
+    display: block;
+    width: 100px;
+    height: 35px;
+    padding: 5px;
+    border: 2px solid rgb(255, 251, 0);    
+  }
