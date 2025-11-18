@@ -20,11 +20,15 @@
 
 
 
-<h4>nome:</h4>
-<div> id= "nome" ></div>
 <h4>resultado:</h4>
+<hr>
+ESCOLHA UM POKEMON
+<input id="pokemon" type="number">
+<button type="button" onclick="inserirPokemon()">inserir</button>
+
 <button type="button" onclick="pokemonImgNome('pokemonImgNome')">Inserir</button>
 <div id=resultado></div>
+
 
 
 
@@ -32,21 +36,35 @@
 <script>
     
 
-
-  function pokemonImgNome(){
-  fetch('https://pokeapi.co/api/v2/pokemon/2')
+  function inserirPokemon(){
+    var id = document.getElementById('pokemon').value
+  fetch('https://pokeapi.co/api/v2/pokemon/'+id)
     .then(res => res.json())
     .then(data => {
         console.log(data)
         document.getElementById('resultado').innerHTML = '<img src="'+data.sprites.front_default+'" width="300">';
-        document.getElementById('Nome').innerHTML = '<h4>'+data.sprites.name+ '</h4'
+        document.getElementById('resultado').innerHTML += '<h4>'+data.sprites.name+ '</h4'
     
     
     })
 }
 
     
+function inserirGato(){ 
+        // Interagindo com uma API
+        // o fetch vai buscar os dados da API no link que esta dentro dele
+        fetch('https://api.thecatapi.com/v1/images/search')
+        // diz que a reposta vai ser retornada em formato JSON
+        .then(res => res.json())
+        // Local onde podemos manipular a resposta da API
+        .then(data => {
+            console.log(data)
+            // pegando o ID resultado em TELA e adicionando um HTML
+            document.getElementById('resultado').innerHTML +=
+            '<img src="'+data[0].url+'" width="300">'
 
+        })
+    }
 
 
     function calcular(operacao){
@@ -76,5 +94,20 @@
                 }
             }
     document.getElementById('resultado').innerHTML = resultado
+    // chamada da aPi
+     fetch('https://pokeapi.co/api/v2/pokemon/'+resultado)
+        .then(res => res.json())
+        .then(data => {
+        console.log(data)
+        document.getElementById('resultado').innerHTML = '<img src="'+data.sprites.front_default+'" width="300">';
+        document.getElementById('resultado').innerHTML += '<h4>'+data.sprites.name+ '</h4'
+        
     }
+)
+    .catch(error=>{
+        inserirGato();
+    
+    })
+    }
+
 </script>
