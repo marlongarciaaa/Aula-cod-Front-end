@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+</head>
+<body>
+    <div>
+        <h2>Contato</h2>
+        <form action="tabela.html" method="POST">
+            <br>
+            <label for="Cep">Digite o Cep:</label>
+            <input type="text" id="cep" name="Cep" required>
+            <br>
+            <label for="logradouro">logradouro:</label>
+            <input type="text" id="logradouro" name="logradouro">
+            <br>
+            <label for="bairro">bairro:</label>
+            <input type="text" id="bairro" name="bairro">
+             <br>
+            <label for="cidade">cidade:</label>
+             <input id="cidade"  name="cidade">
+             <br>
+             <label for="estado">Estado:</label>
+             <input id="estado"  name="estado">
+             <br>
+             <form action=""></form>
+    </div>
+    <script>
+        // pega o campo cep de tela e adiciona em uma variavel
+        var campoCep = document.getElementById('cep');
+        // quando o campo perder o foco ele roda uma função
+        campoCep.addEventListener('blur', function(){
+            //value vai estar pegando o valor digitado no campo
+            var valorCep = campoCep.Value  
+            // chamada de API via fetch
+            fetch('https;//viacep.com.br/ws/89165305/json/')
+            .then(responde => res.json())
+            .then(data => {
+                console.log(data);
+                document.getElementById('logradouro').value = data.logradouro;
+                document.getElementById('bairro').value = data.bairro;
+                document.getElementById('cidade').value = data.cidade;
+                document.getElementById('estado').value = data.estado;
+            })
+        });
+    </script>
+
+
+
