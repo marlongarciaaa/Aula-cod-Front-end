@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    
+     
  <header>
         <h1>CALCULADORA</h1>
  </header>
@@ -14,15 +14,15 @@
     <section>
     <h2 id="visor"> </h2>
     <br>
-    <button id="CE" onclick="apagar()">CE</button>
-    <button id="%">%</button>
-    <button id="Xy">Xy</button> 
+    <button id="CE" onclick="apagar('CE')">CE</button>
+    <button id="%" onclick="digitar('%')">%</button>
+    <button id="Xy" onclick="digitar('Xy')">Xy</button> 
     <button id="+" onclick="digitar('+')">+</button>
     <br>
     <Button id="7" onclick="digitar('7')">7</Button>
     <button id="8" onclick="digitar('8')">8</button>
     <button id="9" onclick="digitar('9')">9</button>
-    <button id="*" onclick="idgitar('*')">*</button>
+    <button id="*" onclick="digitar('*')">*</button>
     <br>
     <button id="4" onclick="digitar('4')">4</button>
     <button id="5" onclick="digitar('5')">5</button>
@@ -32,11 +32,11 @@
     <button id="1" onclick="digitar('1')">1</button>
     <button id="2" onclick="digitar('2')">2</button>
     <button id="3" onclick="digitar('3')">3</button>
-    <button id="/">/</button>
+    <button id="/" onclick="digitar('/')">/</button>
     <br>
     <button id="✅" onclick="digitar('=')">✅</button>
     <button id="0" onclick="digitar('0')">0</button>
-    <button id=".">.</button>
+    <button id="." onclick="digitar('.')">.</button>
 
     <p id="resultado"></p>
     </section>

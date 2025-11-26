@@ -1,0 +1,86 @@
+{
+    "Carros":[
+    {
+        "Carro":"Lamborguini Svj",
+        "Motor":"v12",
+        "classificação":"supercarro",
+        "Paísorigem":"Italia",
+        "Anocriacao":"2018"
+    },
+
+    {
+        "Carro": "Ferrari LaFerrari",
+        "Motor": "V12 híbrido",
+        "classificação": "supercarro",
+        "Paísorigem": "Itália",
+        "Anocriacao": "2013"
+    },
+
+    {
+        "Carro": "Bugatti Chiron",
+        "Motor": "W16",
+        "classificação": "hipercarro",
+        "Paísorigem": "França",
+        "Anocriacao": "2016"
+    },
+
+    {
+        "Carro": "McLaren P1",
+        "Motor": "V8 híbrido",
+        "classificação": "hipercarro",
+        "Paísorigem": "Reino Unido",
+        "Anocriacao": "2013"
+    },
+
+    {
+        "Carro": "Porsche 918 Spyder",
+        "Motor": "V8 híbrido",
+        "classificação": "hipercarro",
+        "Paísorigem": "Alemanha",
+        "Anocriacao": "2013"
+    },
+
+    {
+        "Carro": "Koenigsegg Jesko",
+        "Motor": "V8",
+        "classificação": "hipercarro",
+        "Paísorigem": "Suécia",
+        "Anocriacao": "2019"
+    },
+
+    {
+        "Carro": "Aston Martin Valkyrie",
+        "Motor": "V12 híbrido",
+        "classificação": "hipercarro",
+        "Paísorigem": "Reino Unido",
+        "Anocriacao": "2021"
+    },
+
+    {
+        "Carro": "Pagani Huayra",
+        "Motor": "V12",
+        "classificação": "hipercarro",
+        "Paísorigem": "Itália",
+        "Anocriacao": "2011"
+    },
+
+    {
+        "Carro": "Ford GT",
+        "Motor": "V6",
+        "classificação": "supercarro",
+        "Paísorigem": "Estados Unidos",
+        "Anocriacao": "2016"
+    },
+
+    {
+        "Carro": "Lamborghini Huracán Performante",
+        "Motor": "V10",
+        "classificação": "supercarro",
+        "Paísorigem": "Itália",
+        "Anocriacao": "2017"
+    }
+    
+    
+    ]
+    
+}

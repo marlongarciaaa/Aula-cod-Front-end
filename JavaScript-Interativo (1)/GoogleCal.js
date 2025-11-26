@@ -11,16 +11,38 @@ function digitar (tecla){
         num1 = document.getElementById("visor").innerText;
         operaçao = "+";
         apagar();
-    }else if (tecla === "-"){
+    }
+    
+    else if (tecla === "-"){
         num1 = document.getElementById("visor").innerText;
         operaçao = "-";
         apagar();
     }
+
     else if (tecla === "*"){
         num1 = document.getElementById("visor").innerText;
         operaçao = "*";
         apagar();
     }
+
+    else if (tecla === "/"){
+        num1 = document.getElementById("visor").innerText;
+        operaçao = "/";
+        apagar();
+    }
+
+    else if (tecla === "%"){
+        num1 = document.getElementById("visor").innerText;
+        operaçao = "%";
+        apagar();
+    }
+    else if (tecla === "Xy"){
+        num1 = document.getElementById("visor").innerText;
+        operaçao = "Xy";
+        apagar();
+    }
+
+
 
 
 
@@ -33,6 +55,10 @@ function digitar (tecla){
     }else {
         document.getElementById("visor").innerText +=tecla;
     }
+
+    
+
+    
 
 }
 
@@ -47,6 +73,15 @@ function calcular (){
 }
 else if (operaçao === '*'){
     resultado = parseFloat(num1)*parseFloat(num2);
+}
+else if (operaçao === '/'){
+    resultado = parseFloat(num1)/parseFloat(num2);
+}
+else if (operaçao === '%'){
+    resultado = parseFloat(num1)/parseFloat(num2);
+}
+else if (operaçao === 'Xy'){
+    resultado = parseFloat(num1)/parseFloat(num2);
 }
 
 
