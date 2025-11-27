@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestão de Filmes - JSON</title>
+    <link rel="stylesheet" href="carros.css">
+</head>
+<body>
+
+<header class="win-header">
+    <h1>Gerenciador de Carros(JSON)</h1>
+</header>
+
+<main class="container">
+
+    <!-- Área de busca -->
+    <section class="search-box">
+        <input type="text" id="searchInput" placeholder="Pesquisar por Carro...">
+        <button id="btnSearch">Buscar</button>
+        <button id="btnListAll">Listar Tudo</button>
+        <button id="btnAdd">Adicionar Novo Carro</button>
+    </section>
+
+    <!-- Listagem dos filmes -->
+    <section id="carlist" class="car-list">
+        <!-- JS renderiza aqui -->
+    </section>
+
+</main>
+
+<!-- Popup Modal para adicionar/editar -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+
+        <h2 id="modalTitle">Editar Carro</h2>
+
+        <form id="carroForm">
+            <label>Carro:</label>
+            <input type="text" id="nome">
+
+            <label>Motor:</label>
+            <input type="text" id="Motor">
+
+            <label>classificacao:</label>
+            <input type="text" id="classificacao">
+
+            <label>paisorigem:</label>
+            <input type="text" id="pais de origem">
+
+            <label>anocriacao:</label>
+            <input type="text" id="ano de criacao">
+            
+            <label>Capa (URL):</label>
+            <input type="text" id="capa">
+
+            <div class="modal-btns">
+                <button type="submit">Salvar</button>
+                <button type="button" id="btnClose">Cancelar</button>
+            </div>
+        </form>
+
+    </div>
+</div>
+
+<script src="carros.js"></script>
+
+</body>
+</html>

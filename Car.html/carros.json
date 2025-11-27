@@ -1,0 +1,86 @@
+[
+{
+"Carro": "Lamborguini Sv",
+"Motor": "v12",
+"classicacao": "superesportivo",
+"paisorigem": "italia",
+"Imagem": "imagens/lambo.jpg",
+"anocriacao": "2018"
+},
+{
+  "Carro": "Ferrari 488 Pista",
+  "Motor": "V8",
+  "classicacao": "superesportivo",
+  "paisorigem": "Italia",
+  "Imagem": "imagens/488.jpg",
+  "anocriacao": "2019"
+},
+{
+  "Carro": "Porsche 911 GT3 RS",
+  "Motor": "Flat-6",
+  "classicacao": "esportivo",
+  "paisorigem": "Alemanha",
+  "Imagem": "imagens/gt3.jpg",
+  "anocriacao": "2022"
+},
+{
+  "Carro": "Bugatti Chiron",
+  "Motor": "W16",
+  "classicacao": "hiperesportivo",
+  "paisorigem": "Franca",
+  "Imagem": "imagens/chiron.jpg",
+  "anocriacao": "2016"
+},
+{
+  "Carro": "McLaren 720S",
+  "Motor": "V8",
+  "classicacao": "superesportivo",
+  "paisorigem": "Reino Unido",
+  "Imagem": "imagens/720s.jpg",
+  "anocriacao": "2017"
+},
+{
+  "Carro": "Nissan GT-R R35",
+  "Motor": "V6",
+  "classicacao": "esportivo",
+  "paisorigem": "Japao",
+  "Imagem": "imagens/35.jpg",
+  "anocriacao": "2007"
+},
+{
+  "Carro": "Ford GT",
+  "Motor": "V6",
+  "classicacao": "superesportivo",
+  "paisorigem": "Estados Unidos",
+  "Imagem": "imagens/gt.jpg",
+  "anocriacao": "2016"
+},
+{
+  "Carro": "Aston Martin Valkyrie",
+  "Motor": "V12",
+  "classicacao": "hiperesportivo",
+  "paisorigem": "Reino Unido",
+  "Imagem": "imagens/Aston.jpg",
+  "anocriacao": "2021"
+},
+{
+  "Carro": "Koenigsegg Jesko",
+  "Motor": "V8",
+  "classicacao": "hiperesportivo",
+  "paisorigem": "Suecia",
+  "Imagem": "imagens/jesko.jpg",
+  "anocriacao": "2023"
+},
+{
+  "Carro": "Chevrolet Corvette Z06",
+  "Motor": "V8",
+  "classicacao": "esportivo",
+  "paisorigem": "Estados Unidos",
+  "Imagem": "imagens/z06.jpg",
+  "anocriacao": "2023"
+}
+    
+
+    
+    
+]

@@ -1,0 +1,264 @@
+[
+  {
+    "nome": "A Origem",
+    "ano": 2010,
+    "capa": "imagens/a-origem.jpg",
+    "duracao": 148,
+    "classificacao": "14",
+    "diretor": "Christopher Nolan",
+    "elenco": [
+      "Leonardo DiCaprio",
+      "Joseph Gordon-Levitt",
+      "Elliot Page"
+    ],
+    "sinopse": "Um ladrão especializado em extrair segredos do subconsciente recebe a missão de implantar uma ideia na mente de um alvo."
+  },
+  {
+    "nome": "Interestelar",
+    "ano": 2014,
+    "capa": "imagens/interestelar.png",
+    "duracao": 169,
+    "classificacao": "10",
+    "diretor": "Christopher Nolan",
+    "elenco": [
+      "Matthew McConaughey",
+      "Anne Hathaway",
+      "Jessica Chastain"
+    ],
+    "sinopse": "Em um futuro distópico, um grupo viaja através de um buraco de minhoca em busca de um novo lar para a humanidade."
+  },
+  {
+    "nome": "Clube da Luta",
+    "ano": 1999,
+    "duracao": 139,
+    "classificacao": "18",
+    "diretor": "David Fincher",
+    "elenco": [
+      "Brad Pitt",
+      "Edward Norton",
+      "Helena Bonham Carter"
+    ],
+    "sinopse": "Um homem desiludido forma um clube secreto de luta que se transforma em algo muito maior e perigoso."
+  },
+  {
+    "nome": "Matrix",
+    "ano": 1999,
+    "duracao": 136,
+    "classificacao": "14",
+    "diretor": "Lana Wachowski, Lilly Wachowski",
+    "elenco": [
+      "Keanu Reeves",
+      "Laurence Fishburne",
+      "Carrie-Anne Moss"
+    ],
+    "sinopse": "Um hacker descobre a verdade por trás de sua realidade e lidera a resistência contra máquinas que controlam o mundo."
+  },
+  {
+    "nome": "O Senhor dos Anéis: A Sociedade do Anel",
+    "ano": 2001,
+    "duracao": 178,
+    "classificacao": "12",
+    "diretor": "Peter Jackson",
+    "elenco": [
+      "Elijah Wood",
+      "Ian McKellen",
+      "Viggo Mortensen"
+    ],
+    "sinopse": "Um jovem hobbit inicia uma jornada para destruir um anel maligno que ameaça toda a Terra-média."
+  },
+  {
+    "nome": "O Senhor dos Anéis: As Duas Torres",
+    "ano": 2002,
+    "duracao": 179,
+    "classificacao": "12",
+    "diretor": "Peter Jackson",
+    "elenco": [
+      "Elijah Wood",
+      "Sean Astin",
+      "Ian McKellen"
+    ],
+    "sinopse": "A Sociedade do Anel está separada, e uma nova ameaça surge enquanto a batalha pela Terra-média se intensifica."
+  },
+  {
+    "nome": "O Senhor dos Anéis: O Retorno do Rei",
+    "ano": 2003,
+    "duracao": 201,
+    "classificacao": "12",
+    "diretor": "Peter Jackson",
+    "elenco": [
+      "Elijah Wood",
+      "Viggo Mortensen",
+      "Ian McKellen"
+    ],
+    "sinopse": "Frodo e Sam avançam em direção à Montanha da Perdição enquanto o destino da Terra-média é decidido."
+  },
+  {
+    "nome": "Forrest Gump",
+    "ano": 1994,
+    "duracao": 142,
+    "classificacao": "12",
+    "diretor": "Robert Zemeckis",
+    "elenco": [
+      "Tom Hanks",
+      "Robin Wright",
+      "Gary Sinise"
+    ],
+    "sinopse": "A vida extraordinária de um homem simples que presencia momentos marcantes da história dos Estados Unidos."
+  },
+  {
+    "nome": "Pulp Fiction",
+    "ano": 1994,
+    "duracao": 154,
+    "classificacao": "18",
+    "diretor": "Quentin Tarantino",
+    "elenco": [
+      "John Travolta",
+      "Uma Thurman",
+      "Samuel L. Jackson"
+    ],
+    "sinopse": "Histórias interligadas envolvendo criminosos, um boxeador e situações absurdamente perigosas."
+  },
+  {
+    "nome": "O Poderoso Chefão",
+    "ano": 1972,
+    "duracao": 175,
+    "classificacao": "16",
+    "diretor": "Francis Ford Coppola",
+    "elenco": [
+      "Marlon Brando",
+      "Al Pacino",
+      "James Caan"
+    ],
+    "sinopse": "A saga da família Corleone e sua luta pelo controle da máfia italiana nos Estados Unidos."
+  },
+  {
+    "nome": "O Resgate do Soldado Ryan",
+    "ano": 1998,
+    "duracao": 169,
+    "classificacao": "16",
+    "diretor": "Steven Spielberg",
+    "elenco": [
+      "Tom Hanks",
+      "Matt Damon",
+      "Tom Sizemore"
+    ],
+    "sinopse": "Durante a Segunda Guerra, um grupo de soldados é enviado para resgatar o último sobrevivente de uma família."
+  },
+  {
+    "nome": "Gladiador",
+    "ano": 2000,
+    "duracao": 155,
+    "classificacao": "16",
+    "diretor": "Ridley Scott",
+    "elenco": [
+      "Russell Crowe",
+      "Joaquin Phoenix",
+      "Connie Nielsen"
+    ],
+    "sinopse": "Um general romano traído se torna gladiador e busca justiça contra o imperador corrupto."
+  },
+  {
+    "nome": "O Grande Truque",
+    "ano": 2006,
+    "duracao": 130,
+    "classificacao": "12",
+    "diretor": "Christopher Nolan",
+    "elenco": [
+      "Christian Bale",
+      "Hugh Jackman",
+      "Scarlett Johansson"
+    ],
+    "sinopse": "A rivalidade entre dois mágicos leva ambos a extremos perigosos em busca do espetáculo perfeito."
+  },
+  {
+    "nome": "A Rede Social",
+    "ano": 2010,
+    "duracao": 120,
+    "classificacao": "12",
+    "diretor": "David Fincher",
+    "elenco": [
+      "Jesse Eisenberg",
+      "Andrew Garfield",
+      "Justin Timberlake"
+    ],
+    "sinopse": "A controversa origem do Facebook e os conflitos envolvendo seus criadores."
+  },
+  {
+    "nome": "Homem-Aranha: Sem Volta Para Casa",
+    "ano": 2021,
+    "duracao": 148,
+    "classificacao": "12",
+    "diretor": "Jon Watts",
+    "elenco": [
+      "Tom Holland",
+      "Zendaya",
+      "Benedict Cumberbatch"
+    ],
+    "sinopse": "Após sua identidade ser revelada, Peter Parker busca ajuda e acaba abrindo as portas do multiverso."
+  },
+  {
+    "nome": "O Lobo de Wall Street",
+    "ano": 2013,
+    "duracao": 180,
+    "classificacao": "18",
+    "diretor": "Martin Scorsese",
+    "elenco": [
+      "Leonardo DiCaprio",
+      "Jonah Hill",
+      "Margot Robbie"
+    ],
+    "sinopse": "A jornada de um corretor que enriquece através de esquemas fraudulentos e vive no excesso."
+  },
+  {
+    "nome": "A Chegada",
+    "ano": 2016,
+    "duracao": 116,
+    "classificacao": "10",
+    "diretor": "Denis Villeneuve",
+    "elenco": [
+      "Amy Adams",
+      "Jeremy Renner",
+      "Forest Whitaker"
+    ],
+    "sinopse": "Uma linguista é chamada para se comunicar com seres extraterrestres que chegam à Terra."
+  },
+  {
+    "nome": "Coringa",
+    "ano": 2019,
+    "duracao": 122,
+    "classificacao": "16",
+    "diretor": "Todd Phillips",
+    "elenco": [
+      "Joaquin Phoenix",
+      "Robert De Niro",
+      "Zazie Beetz"
+    ],
+    "sinopse": "A transformação de Arthur Fleck em um dos vilões mais icônicos da cultura pop."
+  },
+  {
+    "nome": "Whiplash",
+    "ano": 2014,
+    "duracao": 107,
+    "classificacao": "14",
+    "diretor": "Damien Chazelle",
+    "elenco": [
+      "Miles Teller",
+      "J.K. Simmons",
+      "Paul Reiser"
+    ],
+    "sinopse": "Um jovem baterista enfrenta os abusos de um instrutor implacável em busca da perfeição."
+  },
+  {
+    "nome": "Duna",
+    "ano": 2021,
+    "duracao": 155,
+    "classificacao": "12",
+    "diretor": "Denis Villeneuve",
+    "elenco": [
+      "Timothée Chalamet",
+      "Zendaya",
+      "Oscar Isaac"
+    ],
+    "sinopse": "O herdeiro de uma casa nobre se envolve em conflitos políticos e místicos em um planeta desértico."
+  }
+]
