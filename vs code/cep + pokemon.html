@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CEP + POKEMON</title>
+</head>
+<body>
+    <div>
+        <h2>Contato</h2>
+        <form action="tabela.html" method="POST">
+            <br>
+            <label for="Cep">Digite o Cep:</label>
+            <input type="text" id="cep" name="Cep" required>
+            <br>
+            <label for="logradouro">logradouro:</label>
+            <input type="text" id="logradouro" name="logradouro">
+            <br>
+            <label for="bairro">bairro:</label>
+            <input type="text" id="bairro" name="bairro">
+             <br>
+            <label for="cidade">cidade:</label>
+             <input id="cidade"  name="cidade">
+             <br>
+             <label for="estado">Estado:</label>
+             <input id="estado"  name="estado">
+             <br>
+             <form action=""></form>
+    </div>
+        <div id="resultado">
+        <script>
+        var campoCep = document.getElementById('cep');
+            campoCep.addEventListener('blur', function(){
+            var valorCep = campoCep.value  
+            fetch('https://viacep.com.br/ws/'+valorCep+'/json/')
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                document.getElementById('logradouro').value = data.logradouro;
+                document.getElementById('bairro').value = data.bairro;
+                document.getElementById('cidade').value = data.localidade;
+                document.getElementById('estado').value = data.estado;
+                document.getElementById('cep').style.border = " solid green 4px";
+
+          
+       fetch('https://pokeapi.co/api/v2/pokemon/'+valorCep.substr(5,3))
+       .then(res => res.json())
+       .then(data => {
+        console.log(data)
+        document.getElementById('resultado').innerHTML = '<img src="'+data.sprites.front_default+'" width="300">';
+        document.getElementById('resultado').innerHTML += '<h4>'+ data.name+ '</h4'
+    
+    })
+            })
+            .catch(error =>{
+                document.getElementById('cep').style.border = "solid red 4px";
+            })
+        });
+    </script>
+    </div>
+
+
+</body>
