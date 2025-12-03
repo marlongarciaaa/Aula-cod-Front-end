@@ -15,12 +15,13 @@ function renderList(lista) {
         const card = document.createElement("div");
         card.className = "car-card";
 
+        console.log(f.Motor);
         card.innerHTML = `
-            <img src="${f.Imagem}" alt="fotocarro">
+            <img src="${f.Imagem}" alt="Carro">
             <h3>${f.Carro} (${f.Motor})</h3>
-            <p><b>Duração:</b> ${f.classificacao}</p>
-            <p><b>Classificação:</b> ${f.paisorigem}</p>
-            <p><b>Diretor:</b> ${f.anocricao}</p>
+            <p><b>classicacao:</b> ${f.classicacao}</p>
+            <p><b>paisorigem:</b> ${f.paisorigem}</p>
+            <p><b>anocriacao:</b> ${f.anocriacao}</p>
 
 
             <button onclick="openModal(${index})">Editar</button>
@@ -44,7 +45,7 @@ document.getElementById("btnListAll").onclick = () => renderList(carros);
 document.getElementById("btnAdd").onclick = () => {
     editIndex = null;
     clearForm();
-    openPopup("Adicionar Filme");
+    openPopup("Adicionar Novo Carro");
 };
 
 /* Abrir modal */
@@ -78,13 +79,14 @@ document.getElementById("btnClose").onclick = () => {
 document.getElementById("carroForm").onsubmit = (e) => {
     e.preventDefault();
 
+    
     const novo = {
-        nome: document.getElementById("Carro").value,
-        ano: parseInt(document.getElementById("Motor").value),
-        duracao: document.getElementById("classificacao").value,
-        classificacao: document.getElementById("paisorigem").value,
-        diretor: document.getElementById("anocriacao").value,
-        capa: document.getElementById("capa").value,
+        Carro: document.getElementById("nome").value,
+        Motor: document.getElementById("Motor").value,
+        classicacao: document.getElementById("classificacao").value,
+        paisorigem: document.getElementById("paisorigem").value,
+        anocriacao: document.getElementById("anocriacao").value,
+        Imagem: document.getElementById("capa").value,
     };
 
     if (editIndex !== null) {
@@ -106,5 +108,5 @@ function removeMovie(i) {
 }
 
 function clearForm() {
-    document.getElementById("carForm").reset();
+    document.getElementById("carroForm").reset();
 }
