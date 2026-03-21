@@ -13,3 +13,4 @@ import { NavbarComponent } from './pages/navbar/navbar.component';
     </main>
   `
 })
+export class App {}
