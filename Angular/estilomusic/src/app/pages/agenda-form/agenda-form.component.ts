@@ -1,5 +1,3 @@
-// (src/app/pages/agenda-form/agenda-form.component.ts)
-
 import { Component, OnInit, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
@@ -22,22 +20,21 @@ export class AgendaFormComponent implements OnInit {
   private agendaService = inject(AgendaService);
   private router = inject(Router);
 
-  agendaForm: FormGroup;
+  agendaForm!: FormGroup;
   categorias: Categoria[] = [];
 
   constructor() {
-    // Inicialização do formulário com validações
     this.agendaForm = this.fb.group({
       titulo: ['', [Validators.required, Validators.minLength(5)]],
       data: ['', Validators.required],
       local: ['', Validators.required],
-      categoriaId: ['', Validators.required],
-      descricao: ['', [Validators.required, Validators.maxLength(200)]]
+      categoriaId: [null, Validators.required], // ✅ CORRIGIDO
+      descricao: ['', [Validators.required, Validators.maxLength(200)]],
+      imagem: [''] // ✅ ADICIONADO
     });
   }
 
   ngOnInit() {
-    // Carrega as categorias do JSON Server para o Select
     this.agendaService.getCategorias().subscribe(res => {
       this.categorias = res;
     });
@@ -45,13 +42,20 @@ export class AgendaFormComponent implements OnInit {
 
   salvar() {
     if (this.agendaForm.valid) {
-      this.agendaService.salvarEvento(this.agendaForm.value).subscribe({
+
+      const evento = this.agendaForm.value;
+
+      // 🚨 GARANTE QUE NÃO ENVIA ID
+      delete evento.id;
+
+      this.agendaService.salvarEvento(evento).subscribe({
         next: () => {
           alert('Evento salvo com sucesso!');
-          this.router.navigate(['/']); // Volta para a listagem
+          this.router.navigate(['/']);
         },
         error: (err) => console.error('Erro ao salvar:', err)
       });
+
     } else {
       Object.values(this.agendaForm.controls).forEach(control => {
         control.markAsTouched();

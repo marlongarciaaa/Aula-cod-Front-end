@@ -1,0 +1,72 @@
+<div class="container border p-4 shadow-sm bg-light rounded">
+  <h2 class="mb-4 text-primary">Novo Evento na Agenda</h2>
+
+  <form [formGroup]="agendaForm" (ngSubmit)="salvar()">
+    
+    <!-- TÍTULO -->
+    <div class="mb-3">
+      <label class="form-label">Título do Evento</label>
+      <input type="text" formControlName="titulo" class="form-control" 
+             [class.is-invalid]="agendaForm.get('titulo')?.touched && agendaForm.get('titulo')?.invalid">
+      <div class="invalid-feedback">O título deve ter pelo menos 5 caracteres.</div>
+    </div>
+
+    <!-- DATA + CATEGORIA -->
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <label class="form-label">Data</label>
+        <input type="date" formControlName="data" class="form-control"
+               [class.is-invalid]="agendaForm.get('data')?.touched && agendaForm.get('data')?.invalid">
+      </div>
+
+      <div class="col-md-6 mb-3">
+        <label class="form-label">Categoria</label>
+        <select formControlName="categoriaId" class="form-select"
+                [class.is-invalid]="agendaForm.get('categoriaId')?.touched && agendaForm.get('categoriaId')?.invalid">
+
+          <!-- ✅ CORRIGIDO -->
+          <option [ngValue]="null">Selecione...</option>
+
+          @for (cat of categorias; track cat.id) {
+            <option [ngValue]="cat.id">
+              {{ cat.nome }}
+            </option>
+          }
+
+        </select>
+      </div>
+    </div>
+
+    <!-- LOCAL -->
+    <div class="mb-3">
+      <label class="form-label">Localização</label>
+      <input type="text" formControlName="local" class="form-control"
+             [class.is-invalid]="agendaForm.get('local')?.touched && agendaForm.get('local')?.invalid">
+    </div>
+
+    <!-- DESCRIÇÃO -->
+    <div class="mb-3">
+      <label class="form-label">Descrição Curta</label>
+      <textarea formControlName="descricao" class="form-control" rows="3"></textarea>
+    </div>
+
+    <!-- IMAGEM -->
+    <div class="mb-3">
+      <label class="form-label">Imagem</label>
+      <input type="text" formControlName="imagem" class="form-control"
+             [class.is-invalid]="agendaForm.get('imagem')?.touched && agendaForm.get('imagem')?.invalid">
+    </div>
+
+    <!-- BOTÕES -->
+    <div class="d-flex gap-2">
+      <button type="submit" class="btn btn-primary" [disabled]="agendaForm.invalid">
+        Agendar Evento
+      </button>
+
+      <button type="button" class="btn btn-secondary" (click)="agendaForm.reset()">
+        Limpar
+      </button>
+    </div>
+
+  </form>
+</div>
