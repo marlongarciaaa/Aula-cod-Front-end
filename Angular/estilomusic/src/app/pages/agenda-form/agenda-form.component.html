@@ -53,10 +53,15 @@
     <!-- IMAGEM -->
     <div class="mb-3">
       <label class="form-label">Imagem</label>
-      <input type="text" formControlName="imagem" class="form-control"
-             [class.is-invalid]="agendaForm.get('imagem')?.touched && agendaForm.get('imagem')?.invalid">
+      <input type="text" formControlName="imagem" class="form-control">
     </div>
-
+  <!-- 👇 PREVIEW -->
+  <div *ngIf="agendaForm.get('imagem')?.value" class="mt-2">
+    <img 
+      [src]="agendaForm.get('imagem')?.value" 
+      class="img-preview"
+      alt="Preview" class="img-fluid w-110" style="height:300px; object-fit:cover;">
+  </div>
     <!-- BOTÕES -->
     <div class="d-flex gap-2">
       <button type="submit" class="btn btn-primary" [disabled]="agendaForm.invalid">
@@ -66,7 +71,7 @@
       <button type="button" class="btn btn-secondary" (click)="agendaForm.reset()">
         Limpar
       </button>
-    </div>
+    </div>                 
 
   </form>
 </div>

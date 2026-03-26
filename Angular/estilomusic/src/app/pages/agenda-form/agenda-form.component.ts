@@ -47,7 +47,7 @@ export class AgendaFormComponent implements OnInit {
 
       // 🚨 GARANTE QUE NÃO ENVIA ID
       delete evento.id;
-
+      
       this.agendaService.salvarEvento(evento).subscribe({
         next: () => {
           alert('Evento salvo com sucesso!');
