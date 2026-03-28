@@ -8,6 +8,10 @@ export const routes: Routes = [
   { 
     path: 'novo-evento', 
     loadComponent: () => import('./pages/agenda-form/agenda-form.component').then(m => m.AgendaFormComponent) 
+  },
+  { 
+    path: 'meus-ingressos', 
+    loadComponent: () => import('./pages/meus-ingressos/meus-ingressos.component').then(m => m.MeusIngressosComponent) 
   }
 ];
 

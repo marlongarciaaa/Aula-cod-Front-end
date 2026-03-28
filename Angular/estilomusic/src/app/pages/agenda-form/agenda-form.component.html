@@ -27,11 +27,9 @@
           <!-- ✅ CORRIGIDO -->
           <option [ngValue]="null">Selecione...</option>
 
-          @for (cat of categorias; track cat.id) {
-            <option [ngValue]="cat.id">
-              {{ cat.nome }}
-            </option>
-          }
+          <option *ngFor="let cat of categorias" [ngValue]="cat.id">
+         {{ cat.nome }}
+         </option>
 
         </select>
       </div>
@@ -60,7 +58,7 @@
     <img 
       [src]="agendaForm.get('imagem')?.value" 
       class="img-preview"
-      alt="Preview" class="img-fluid w-110" style="height:300px; object-fit:cover;">
+      alt="Preview" class="img-fluid w-110" style="height:200px; object-fit:cover;">
   </div>
     <!-- BOTÕES -->
     <div class="d-flex gap-2">

@@ -29,7 +29,7 @@
       "local": "Minas Gerais",
       "categoriaId": "1",
       "descricao": "Cantor sertanejo conhecido como Embaixador.",
-     "imagem": "./imagens/1.jpg"
+      "imagem": "./imagens/1.jpg"
     },
     {
       "id": "2",
@@ -59,15 +59,6 @@
       "imagem": "./imagens/4.webp"
     },
     {
-      "id": "5",
-      "titulo": "MC Kevinho",
-      "data": "2026-05-05",
-      "local": "São Paulo",
-      "categoriaId": "2",
-      "descricao": "Conhecido por hits dançantes.",
-      "imagem": "./imagens/5.jpg"
-    },
-    {
       "id": "6",
       "titulo": "MC Ryan SP",
       "data": "2026-05-10",
@@ -86,15 +77,6 @@
       "imagem": "./imagens/7.jpg"
     },
     {
-      "id": "8",
-      "titulo": "MC Daniel",
-      "data": "2026-05-20",
-      "local": "São Paulo",
-      "categoriaId": "2",
-      "descricao": "Destaque recente no funk brasileiro.",
-      "imagem": "assets/imagens/8.jpg"
-    },
-    {
       "id": "9",
       "titulo": "Jorge & Mateus",
       "data": "2026-06-01",
@@ -111,92 +93,7 @@
       "categoriaId": "2",
       "descricao": "Funkeiro conhecido por hits animados e presença marcante nos palcos.",
       "imagem": "assets/imagens/10.jpg"
-    },
-    {
-      "id": "11",
-      "titulo": "Thiaguinho",
-      "data": "2026-06-10",
-      "local": "São Paulo",
-      "categoriaId": "3",
-      "descricao": "Ex-vocalista do Exaltasamba e grande nome do pagode.",
-      "imagem": "assets/imagens/10.jpg"
-    },
-    {
-      "id": "12",
-      "titulo": "Ferrugem",
-      "data": "2026-06-15",
-      "local": "Rio de Janeiro",
-      "categoriaId": "3",
-      "descricao": "Destaque do pagode romântico atual.",
-      "imagem": "assets/imagens/10.jpg"
-    },
-    {
-      "id": "13",
-      "titulo": "Dilsinho",
-      "data": "2026-06-20",
-      "local": "Rio de Janeiro",
-      "categoriaId": "3",
-      "descricao": "Cantor popular com hits modernos do pagode.",
-      "imagem": "assets/imagens/10.jpg"
-    },
-    {
-      "id": "14",
-      "titulo": "Sorriso Maroto",
-      "data": "2026-07-01",
-      "local": "Rio de Janeiro",
-      "categoriaId": "3",
-      "descricao": "Grupo consagrado no cenário do pagode.",
-      "imagem": "assets/imagens/10.jpg"
-    },
-    {
-      "id": "15",
-      "titulo": "Arlindo Cruz",
-      "data": "2026-07-05",
-      "local": "Rio de Janeiro",
-      "categoriaId": "5",
-      "descricao": "Um dos maiores nomes do samba brasileiro.",
-      "imagem": "assets/imagens/10.jpg"
-    },
-    {
-      "id": "16",
-      "titulo": "Zeca Pagodinho",
-      "data": "2026-07-10",
-      "local": "Rio de Janeiro",
-      "categoriaId": "5",
-      "descricao": "Ícone do samba com carreira consolidada."
-    },
-    {
-      "id": "17",
-      "titulo": "Martinho da Vila",
-      "data": "2026-07-15",
-      "local": "Rio de Janeiro",
-      "categoriaId": "5",
-      "descricao": "Referência histórica do samba no Brasil."
-    },
-    {
-      "id": "18",
-      "titulo": "Natiruts",
-      "data": "2026-08-01",
-      "local": "Brasília",
-      "categoriaId": "4",
-      "descricao": "Banda brasileira de reggae muito popular."
-    },
-    {
-      "id": "19",
-      "titulo": "Armandinho",
-      "data": "2026-08-05",
-      "local": "Rio Grande do Sul",
-      "categoriaId": "4",
-      "descricao": "Conhecido por misturar reggae e pop."
-    },
-    {
-      "id": "20",
-      "titulo": "Cidade Negra",
-      "data": "2026-08-10",
-      "local": "Rio de Janeiro",
-      "categoriaId": "4",
-      "descricao": "Uma das bandas de reggae mais famosas do Brasil."
-    } 
+    }
   ],
   "usuarios": [
     {
@@ -212,6 +109,18 @@
       "email": "aluno@senai.com",
       "senha": "123",
       "role": "user"
+    }
+  ],
+  "meus-ingressos":[
+    {
+  "id": "1",
+  "titulo": "Gusttavo Lima",
+  "data": "2026-04-10",
+  "local": "Minas Gerais",
+  "categoriaId": "1",
+  "descricao": "Cantor sertanejo conhecido como Embaixador.",
+  "imagem": "./imagens/1.jpg",
+  "adquirido": true
     }
   ]
 }

@@ -1,7 +1,77 @@
 /* You can add global styles to this file, and also import other style files */
+/* Mantém fundo clarinho suave */
 body {
-  background-color: rgb(252, 252, 252);
+  background-color: rgb(0, 0, 0);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-h1{
-  color: black;
+
+/* Títulos principais com destaque */
+h1 {
+  color: #25b611; /* Azul bootstrap */
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* Ajuste para cards (eventos) */
+.card {
+  border-radius: 0.75rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 0.5rem 1rem rgba(161, 161, 161, 0.25);
+}
+
+/* Botões mais visíveis e com transição */
+.btn {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+.btn-primary:hover {
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+}
+
+/* Espaçamentos para container geral */
+.container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* Pequenos ajustes em badges para melhor visual */
+.badge.bg-info {
+  font-weight: 600;
+  color: #15c45d;
+}
+
+/* Responsividade melhorada para imagens de eventos */
+.card-img-top {
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Navbar */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Link ativo da navbar */
+.active-link {
+  font-weight: 700;
+  border-bottom: 3px solid white;
+}
+
+/* Espaçamento no footer se existir */
+footer {
+  padding: 1rem 0;
+  background-color: #f8f9fa;
+  text-align: center;
+  color: #83677c;
 }

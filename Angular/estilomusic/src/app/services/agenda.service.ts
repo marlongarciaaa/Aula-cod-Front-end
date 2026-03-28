@@ -9,6 +9,7 @@ export class AgendaService {
   private http = inject(HttpClient);
   private readonly URL_EVENTOS = 'http://localhost:3000/eventos';
   private readonly URL_CATEGORIAS = 'http://localhost:3000/categorias';
+    private readonly URL_MEUSINGRESSOS = 'http://localhost:3000/meus-ingressos';
 
   // Buscar todos os eventos
   getEventos(): Observable<Evento[]> {
@@ -29,4 +30,8 @@ export class AgendaService {
   excluirEvento(id: string): Observable<void> {
     return this.http.delete<void>(`${this.URL_EVENTOS}/${id}`);
   }
+  getMeusIngressos() {
+  // Aqui você pode filtrar por usuário logado. Por enquanto, retorna um subset.
+  return this.http.get<Evento[]>(this.URL_MEUSINGRESSOS);
+}
 }
