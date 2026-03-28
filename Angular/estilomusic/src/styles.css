@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 /* Mantém fundo clarinho suave */
 body {
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(95, 188, 204);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -19,7 +19,7 @@ h1 {
 }
 
 .card:hover {
-  box-shadow: 0 0.5rem 1rem rgba(161, 161, 161, 0.25);
+  box-shadow: 0 0.5rem 1rem rgba(73, 71, 71, 0.25);
 }
 
 /* Botões mais visíveis e com transição */
