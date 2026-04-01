@@ -1,38 +1,143 @@
 <div class="container mt-5">
+
+  <!-- HEADER -->
   <div class="d-flex justify-content-between align-items-center mb-4">
-    <h1 class="text-primary fw-bold"> EstiloMusic </h1>
-    <a routerLink="/novo-evento" class="btn btn-success">+ Sugerir Evento</a>
+    <h1 class="fw-bold text-gradient">EstiloMusic 🎧</h1>
+    <a routerLink="/novo-evento" class="btn btn-success rounded-pill shadow">
+      + Sugerir Evento
+    </a>
   </div>
 
+  <!-- 🔍 BARRA DE PESQUISA -->
+  <div class="mb-4">
+    <input 
+      type="text"
+      class="form-control rounded-pill shadow-sm"
+      placeholder="🔍 Buscar eventos por nome ou local..."
+      (input)="filtrarEventos($event)">
+  </div>
+
+  <!-- LISTA -->
   <div class="row">
-    @for (item of eventos(); track item.id) {
+    @for (item of eventosFiltrados(); track item.id) {
       <div class="col-md-4 mb-4">
-        <div class="card h-100 border-0 shadow-sm hover-shadow">
+
+        <div class="h-100 border-0 shadow-lg rounded-4 overflow-hidden card-hover card">
+
           <div class="card-body">
-            <span class="badge bg-info text-dark mb-2">Evento Confirmado</span>
-            <h5 class="card-title fw-bold">{{ item.titulo }}</h5>
-            <p class="card-text text-muted mb-1">
-              <i class="bi bi-calendar"></i> {{ item.data | date:'dd/MM/yyyy' }}
+            <span class="badge bg-gradient mb-2">Evento Confirmado</span>
+
+            <h5 class="card-title fw-bold text-dark">
+              {{ item.titulo }}
+            </h5>
+
+            <p class="text-muted mb-1">
+              <i class="bi bi-calendar-event me-2 text-primary"></i>
+              {{ item.data | date:'dd/MM/yyyy' }}
             </p>
-            <p class="card-text text-muted">
-              <i class="bi bi-geo-alt"></i> {{ item.local }}
+
+            <p class="text-muted">
+              <i class="bi bi-geo-alt-fill me-2 text-danger"></i>
+              {{ item.local }}
             </p>
+
             <hr>
-            <p class="small text-secondary">{{ item.descricao }}</p>
+
+            <p class="small text-secondary">
+              {{ item.descricao }}
+            </p>
           </div>
           
           <div class="card-footer bg-white border-0 pb-3">
-            <button class="btn btn-outline-primary w-100">Ver Detalhes</button>
+            <button 
+              class="btn btn-primary w-100 rounded-pill shadow-sm"
+              data-bs-toggle="modal"
+              data-bs-target="#modalDetalhes"
+              (click)="selecionarEvento(item)">
+              Ver Detalhes
+            </button>
           </div>
+
         </div>
+
       </div>
     } @empty {
       <div class="text-center p-5">
-        <p class="lead">Nenhum evento agendado para o momento.</p>
+        <p class="lead">Nenhum evento encontrado.</p>
       </div>
     }
   </div>
 </div>
 
+<!-- MODAL (mantido igual) -->
+<div class="modal fade" id="modalDetalhes" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content rounded-4">
 
+      <div class="modal-header bg-dark text-white rounded-top-4">
+        <h5 class="modal-title">
+          🎶 {{ eventoSelecionado()?.titulo }}
+        </h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+
+        <div class="mb-3">
+          <p><strong>📅 Data:</strong> {{ eventoSelecionado()?.data | date:'dd/MM/yyyy' }}</p>
+          <p><strong>📍 Local:</strong> {{ eventoSelecionado()?.local }}</p>
+          <p><strong>📝 Descrição:</strong></p>
+          <p class="text-muted">{{ eventoSelecionado()?.descricao }}</p>
+        </div>
+
+        <hr>
+
+        <h6 class="fw-bold mb-3">🎟️ Comprar Ingresso</h6>
+
+        <div class="mb-3">
+          <label class="form-label">Nome completo</label>
+          <input type="text" class="form-control rounded-pill" placeholder="Seu nome">
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Email</label>
+          <input type="email" class="form-control rounded-pill" placeholder="seu@email.com">
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Quantidade</label>
+          <input type="number" class="form-control rounded-pill" min="1" value="1">
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Pagamento</label>
+          <select class="form-select rounded-pill">
+            <option>Cartão</option>
+            <option>Pix</option>
+            <option>Boleto</option>
+          </select>
+        </div>
+
+        <div class="alert alert-info rounded-3">
+          💡 Você receberá o ingresso por email.
+        </div>
+
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary rounded-pill" data-bs-dismiss="modal">
+          Cancelar
+        </button>
+
+        <button 
+          class="btn btn-success rounded-pill shadow"
+          data-bs-dismiss="modal"
+          (click)="confirmarCompra()">
+          💳 Confirmar Compra
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
 

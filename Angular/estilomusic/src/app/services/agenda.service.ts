@@ -2,36 +2,40 @@ import { Injectable, inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Evento, Categoria } from '../models/agenda.model';
-import { get } from 'http';
 
 @Injectable({ providedIn: 'root' })
 export class AgendaService {
   private http = inject(HttpClient);
+
   private readonly URL_EVENTOS = 'http://localhost:3000/eventos';
   private readonly URL_CATEGORIAS = 'http://localhost:3000/categorias';
-    private readonly URL_MEUSINGRESSOS = 'http://localhost:3000/meus-ingressos';
+  private readonly URL_MEUSINGRESSOS = 'http://localhost:3000/meus-ingressos';
 
-  // Buscar todos os eventos
+  // 🔹 EVENTOS
   getEventos(): Observable<Evento[]> {
     return this.http.get<Evento[]>(this.URL_EVENTOS);
   }
 
-  // Buscar todas as categorias para o <select> do formulário
-  getCategorias(): Observable<Categoria[]> {
-    return this.http.get<Categoria[]>(this.URL_CATEGORIAS);
-  }
-
-  // Criar novo compromisso na agenda
   salvarEvento(evento: Evento): Observable<Evento> {
     return this.http.post<Evento>(this.URL_EVENTOS, evento);
   }
 
-  // Excluir compromisso
   excluirEvento(id: string): Observable<void> {
     return this.http.delete<void>(`${this.URL_EVENTOS}/${id}`);
   }
-  getMeusIngressos() {
-  // Aqui você pode filtrar por usuário logado. Por enquanto, retorna um subset.
-  return this.http.get<Evento[]>(this.URL_MEUSINGRESSOS);
-}
+
+  // 🔹 CATEGORIAS
+  getCategorias(): Observable<Categoria[]> {
+    return this.http.get<Categoria[]>(this.URL_CATEGORIAS);
+  }
+
+  // 🔥 🔥 NOVO: SALVAR INGRESSO
+  comprarIngresso(evento: Evento): Observable<Evento> {
+    return this.http.post<Evento>(this.URL_MEUSINGRESSOS, evento);
+  }
+
+  // 🔥 BUSCAR INGRESSOS
+  getMeusIngressos(): Observable<Evento[]> {
+    return this.http.get<Evento[]>(this.URL_MEUSINGRESSOS);
+  }
 }

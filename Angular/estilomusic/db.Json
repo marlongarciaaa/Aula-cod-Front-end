@@ -29,7 +29,7 @@
       "local": "Minas Gerais",
       "categoriaId": "1",
       "descricao": "Cantor sertanejo conhecido como Embaixador.",
-      "imagem": "./imagens/1.jpg"
+      "imagem": "./imagens/1.jpeg"
     },
     {
       "id": "2",
@@ -65,7 +65,7 @@
       "local": "São Paulo",
       "categoriaId": "2",
       "descricao": "Um dos nomes fortes do funk paulista.",
-      "imagem": "./imagens/6.jpg"
+      "imagem": "./imagens/6.webp"
     },
     {
       "id": "7",
@@ -111,16 +111,15 @@
       "role": "user"
     }
   ],
-  "meus-ingressos":[
+  "meus-ingressos": [
     {
-  "id": "1",
-  "titulo": "Gusttavo Lima",
-  "data": "2026-04-10",
-  "local": "Minas Gerais",
-  "categoriaId": "1",
-  "descricao": "Cantor sertanejo conhecido como Embaixador.",
-  "imagem": "./imagens/1.jpg",
-  "adquirido": true
+      "id": "2",
+      "titulo": "Marília Mendonça",
+      "data": "2020-04-15",
+      "local": "Goiás",
+      "categoriaId": "1",
+      "descricao": "Rainha da sofrência e grande compositora.",
+      "imagem": "./imagens/2.webp"
     }
   ]
 }

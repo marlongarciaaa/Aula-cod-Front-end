@@ -18,7 +18,7 @@ export class MeusIngressosComponent implements OnInit {
   }
 
   carregarIngressos() {
-    // Aqui você pode filtrar os eventos "adquiridos" pelo usuário
-    this.agendaService.getMeusIngressos().subscribe(res => this.meusIngressos.set(res));
-  }
+  this.agendaService.getMeusIngressos()
+    .subscribe(res => this.meusIngressos.set(res));
+}
 }

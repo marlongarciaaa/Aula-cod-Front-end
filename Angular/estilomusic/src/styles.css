@@ -1,77 +1,111 @@
 /* You can add global styles to this file, and also import other style files */
 /* Mantém fundo clarinho suave */
+/* Fundo bonito */
+
+/* FUNDO DO SITE */
 body {
-  background-color: rgb(95, 188, 204);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #2a45bb, #2b333f);
+  font-family: 'Poppins', sans-serif;
 }
 
-/* Títulos principais com destaque */
-h1 {
-  color: #25b611; /* Azul bootstrap */
-  font-weight: 700;
-  margin-bottom: 1rem;
-}
+/* =========================
+   🃏 CARDS
+========================= */
 
-/* Ajuste para cards (eventos) */
+/* 👉 ADICIONADO AQUI */
 .card {
-  border-radius: 0.75rem;
-  transition: box-shadow 0.3s ease;
+  background: linear-gradient(135deg, #c9c9ca, #01f7f7) !important;
+  border: none !important;
+  border-radius: 20px !important;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1) !important;
 }
 
-.card:hover {
-  box-shadow: 0 0.5rem 1rem rgba(73, 71, 71, 0.25);
+.card-hover {
+  transition: all 0.3s ease;
+  border-radius: 16px;
 }
 
-/* Botões mais visíveis e com transição */
+.card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgb(255, 255, 255);
+}
+
+/* =========================
+   🏷️ BADGE
+========================= */
+.bg-gradient {
+  background: linear-gradient(45deg, #aa11b8, #0e0ba5);
+  color: rgb(0, 0, 0);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+/* =========================
+   🎧 TÍTULO
+========================= */
+.text-gradient {
+  background: linear-gradient(45deg, #ff0e0e, #e7a8bd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* =========================
+   🔘 BOTÕES
+========================= */
 .btn {
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: all 0.2s ease;
 }
 
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* Botão principal */
 .btn-primary {
-  background-color: #0d6efd;
-  border-color: #0d6efd;
+  background: linear-gradient(45deg, #0d6efd, #10d0f2);
+  border: none;
 }
 
-.btn-primary:hover {
-  background-color: #0b5ed7;
-  border-color: #0a58ca;
+/* Botão sucesso */
+.btn-success {
+  background: linear-gradient(45deg, #198754, #20c997);
+  border: none;
 }
 
-/* Espaçamentos para container geral */
-.container {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+/* =========================
+   🔍 INPUT BUSCA
+========================= */
+input.form-control {
+  border-radius: 50px;
+  padding: 12px 20px;
+  border: 1px solid #bebebe;
+  transition: all 0.3s ease;
 }
 
-/* Pequenos ajustes em badges para melhor visual */
-.badge.bg-info {
-  font-weight: 600;
-  color: #15c45d;
+input.form-control:focus {
+  border-color: #2212b4;
+  box-shadow: 0 0 0 0.2rem rgba(9, 126, 204, 0.2);
 }
 
-/* Responsividade melhorada para imagens de eventos */
-.card-img-top {
-  border-top-left-radius: 0.75rem;
-  border-top-right-radius: 0.75rem;
-  height: 200px;
-  object-fit: cover;
+/* =========================
+   🧾 MODAL
+========================= */
+.modal-content {
+  border-radius: 20px;
+  overflow: hidden;
 }
 
-/* Navbar */
-.navbar {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.modal-header {
+  background: linear-gradient(45deg, #a3aeb9, #343a40);
+  color: white;
 }
 
-/* Link ativo da navbar */
-.active-link {
-  font-weight: 700;
-  border-bottom: 3px solid white;
-}
-
-/* Espaçamento no footer se existir */
-footer {
-  padding: 1rem 0;
-  background-color: #f8f9fa;
-  text-align: center;
-  color: #83677c;
+/* =========================
+   📱 RESPONSIVO
+========================= */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 22px;
+  }
 }
