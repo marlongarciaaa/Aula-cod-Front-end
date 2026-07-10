@@ -3,6 +3,7 @@
 <head>
  <meta charset="UTF-8">
  <title>GeoCalc - Área do triangulo</title>
+ <link rel="stylesheet" href="edicao.css">
 </head>
 <body>
 
@@ -33,6 +34,10 @@ cm²</strong>.";
  }
  }
  ?>
+
+ <a href="../trabalho/arearetangulo.php">← Anterior</a>
+ <a href="./calculadora.html">Menu</a>
+<a href="../trabalho/areacirculo.php">Próxima →</a>
 
 </body>
 </html>

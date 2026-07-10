@@ -3,6 +3,7 @@
 <head>
  <meta charset="UTF-8">
  <title>GeoCalc - Área do Retangulo</title>
+ <link rel="stylesheet" href="edicao.css">
 </head>
 <body>
 
@@ -33,6 +34,10 @@ cm²</strong>.";
  }
  }
  ?>
+
+ <a href="../trabalho/areaquadrado.php">← Anterior</a>
+ <a href="./calculadora.html">Menu</a>
+<a href="../trabalho/areatriangulo.php">Próxima →</a>
 
 </body>
 </html>

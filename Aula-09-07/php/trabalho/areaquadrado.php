@@ -3,6 +3,7 @@
 <head>
  <meta charset="UTF-8">
  <title>GeoCalc - Área do Quadrado</title>
+ <link rel="stylesheet" href="edicao.css">
 </head>
 <body>
 
@@ -31,6 +32,9 @@ cm²</strong>.";
  }
  }
  ?>
+<a href="./calculadora.html">menu</a>
+<a href="./arearetangulo.php">Próxima →</a>
+
 
 </body>
 </html>

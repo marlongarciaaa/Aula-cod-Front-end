@@ -3,6 +3,7 @@
 <head>
  <meta charset="UTF-8">
  <title>GeoCalc - Área do trapezio</title>
+ <link rel="stylesheet" href="edicao.css">
 </head>
 <body>
 
@@ -25,19 +26,24 @@
  $altura = $_POST['altura'];
  if ($M > 0 || $N > 0 || $altura > 0) {
  $area = (($M + $N )* $altura) /2;
- echo "<hr>";
- echo "<h3> Resultado:</h3>";
- echo "Para um trapezio com uma base maior de <strong>{$M} cm</strong>:<br>";
- echo "Para um trapezio com uma base menor de <strong>{$N} cm</strong>:<br>";
- echo "Para um trapezio com uma altura de <strong>{$altura} cm</strong>:<br>";
- echo "A área total é de <strong>" . number_format($area, 2, ',', '.') . "
-cm²</strong>.";
+echo "<hr>";
+echo "<h3> Resultado:</h3>";
+echo "<p>Para um trapezio com uma base maior de <strong>{$M} cm</strong>:<br>";
+echo "Para um trapezio com uma base menor de <strong>{$N} cm</strong>:<br>";
+echo "Para um trapezio com uma altura de <strong>{$altura} cm</strong>:<br>";
+echo "A área total é de <strong>" . number_format($area, 2, ',', '.') . " cm²</strong>.</p>";
+
  } else {
  echo "<p style='color: red;'>Por favor, insira um número maior que zero!
 </p>";
  }
  }
  ?>
+
+ <a href="../trabalho/areacirculo.php">← Anterior</a>
+ <a href="./calculadora.html">Menu</a>
+<a href="../trabalho/volumecubo.php">Próxima →</a>
+
 
 </body>
 </html>

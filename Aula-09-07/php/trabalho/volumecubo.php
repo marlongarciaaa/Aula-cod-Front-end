@@ -3,10 +3,11 @@
 <head>
  <meta charset="UTF-8">
  <title>GeoCalc - volume do Quadrado</title>
+ <link rel="stylesheet" href="edicao.css">
 </head>
 <body>
 
- <h2> Cálculo da volume do Quadrado</h2>
+ <h2> Cálculo da volume do Cubo</h2>
  <p><strong>Descrição:</strong>  A aresta elevada ao cubo. </p>
  <p><strong>Fórmula:</strong> V = a³ </p>
  <form action="" method="POST">
@@ -30,6 +31,9 @@ cm²</strong>.";
  }
  }
  ?>
+ <a href="../trabalho/areatrapezio.php">← Anterior</a>
+ <a href="./calculadora.html">Menu</a>
+<a href="../trabalho/volumeparalelepipedo.php">Próxima →</a>
 
 </body>
 </html>

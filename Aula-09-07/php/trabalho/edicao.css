@@ -1,0 +1,158 @@
+/* GeoCalc - estilo minimalista */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 40px 20px;
+  min-height: 100vh;
+  background-color: #f2f1ed;
+  color: #2e2c28;
+  font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+}
+
+body > * {
+  max-width: 480px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-bottom: 2px solid #d8d5cc;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 1.15rem;
+  margin-bottom: 10px;
+}
+
+p {
+  line-height: 1.5;
+  color: #55524c;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  background-color: #ffffff;
+  border: 1px solid #e2dfd6;
+  border-radius: 10px;
+  padding: 24px;
+  margin-top: 20px;
+}
+
+label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #3d3b36;
+}
+
+input[type="number"] {
+  padding: 10px 12px;
+  border: 1px solid #d8d5cc;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #faf9f6;
+  color: #2e2c28;
+}
+
+input[type="number"]:focus {
+  outline: none;
+  border-color: #9a8f7a;
+  box-shadow: 0 0 0 3px rgba(154, 143, 122, 0.2);
+}
+
+button {
+  margin-top: 8px;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #3d3b36;
+  color: #f2f1ed;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #55524c;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #e2dfd6;
+  margin: 24px 0 16px;
+}
+
+strong {
+  color: #2e2c28;
+}
+
+/* Página inicial */
+
+body.home h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.menu-grid {
+  max-width: 720px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.menu-section {
+  background-color: #ffffff;
+  border: 1px solid #e2dfd6;
+  border-radius: 10px;
+  padding: 20px 24px;
+}
+
+.menu-section h2 {
+  font-size: 1.05rem;
+  margin-bottom: 14px;
+  padding-bottom: 10px;
+}
+
+.menu-section ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.menu-section a {
+  display: block;
+  padding: 10px 12px;
+  border-radius: 6px;
+  color: #3d3b36;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.menu-section a:hover {
+  background-color: #f2f1ed;
+  color: #2e2c28;
+}
+
+@media (max-width: 600px) {
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+}

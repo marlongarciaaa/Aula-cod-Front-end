@@ -3,6 +3,7 @@
 <head>
  <meta charset="UTF-8">
  <title>GeoCalc - volume do Cilindro</title>
+ <link rel="stylesheet" href="edicao.css">
 </head>
 <body>
 
@@ -35,6 +36,8 @@ cm²</strong>.";
  }
  }
  ?>
-
+<a href="../trabalho/volumeparalelepipedo.php">← Anterior</a>
+ <a href="./calculadora.html">Menu</a>
+<a href="../trabalho/volumeCone.php">Próxima →</a>
 </body>
 </html>
